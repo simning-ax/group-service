@@ -1,12 +1,9 @@
 openapi: 3.0.3
 info:
   title: Group Service API
-  version: 0.1.6
+  version: 0.1.7
   description: >-
     OpenAPI för hantering av grupper, ledare och simmare i simning.ax-miljön
-
-servers:
-  - url: http://localhost:8080
 
 paths:
   /health:
