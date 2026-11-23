@@ -1,14 +1,17 @@
-version: "3.9"
-
 services:
-  slim-service:
+  group-service:
     container_name: group-service
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
     ports:
       - "8080:8080"
     volumes:
       - .:/var/www
-    env_file:
-      - .env
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
+  auth-service:
+    container_name: auth-service
+    image: ghcr.io/simning-ax/auth-service:latest
+    restart: unless-stopped
