@@ -16,21 +16,21 @@
     "slim/slim": "^4.15",
     "php-di/php-di": "^7.1",
     "slim/psr7": "^1.8",
-    "doctrine/dbal": "^4.4",
+    "doctrine/dbal": "^4.6",
     "robmorgan/phinx": "^0.16",
     "monolog/monolog": "^3.12",
-    "vlucas/phpdotenv": "^5.7",
-    "ramsey/uuid": "^4.9",
-    "guzzlehttp/guzzle": "^8.2"
+    "vlucas/phpdotenv": "^5.8",
+    "ramsey/uuid": "^4.10",
+    "guzzlehttp/guzzle": "^8.3"
   },
   "require-dev": {
-    "phpunit/phpunit": "^13.3",
-    "phpstan/phpstan": "^2.2",
+    "phpunit/phpunit": "^13.4",
+    "phpstan/phpstan": "^2.3",
     "friendsofphp/php-cs-fixer": "^3.95",
     "squizlabs/php_codesniffer": "^4.0",
-    "infection/infection": "^0.35.4",
-    "rector/rector": "^2.6.7",
-    "phpro/grumphp": "^2.23",
+    "infection/infection": "^0.35.12",
+    "rector/rector": "^2.8.5",
+    "phpro/grumphp": "^2.26",
     "league/openapi-psr7-validator": "^0.24.0"
   },
   "autoload": {
