@@ -2,14 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Time Service API</title>
+        <title>Auth Service API</title>
         <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css"/>
     </head>
     <body>
         <div id="swagger-ui"></div>
         <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
         <script> window.onload = () => {
-            SwaggerUIBundle({url: '/openapi.yaml', dom_id: '#swagger-ui',});
+            const basePath = window.location.pathname.replace(
+                    /\/docs\/?$/,
+                    '',
+            );
+
+            SwaggerUIBundle({
+                url: `${basePath}/openapi.yaml`,
+                dom_id: '#swagger-ui',
+            });
         }; </script>
     </body>
 </html>
